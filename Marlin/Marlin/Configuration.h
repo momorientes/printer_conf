@@ -8,8 +8,8 @@
 //User specified version info of THIS file to display in [Pronterface, etc] terminal window during startup.
 //Implementation of an idea by Prof Braino to inform user that any changes made
 //to THIS file by the user have been successfully uploaded into firmware.
-#define STRING_VERSION_CONFIG_H "2012-05-02" //Personal revision number for changes to THIS file.
-#define STRING_CONFIG_H_AUTHOR "erik" //Who made the changes.
+#define STRING_VERSION_CONFIG_H "2012-07-07" //Personal revision number for changes to THIS file.
+#define STRING_CONFIG_H_AUTHOR "stephan" //Who made the changes.
 
 // This determines the communication speed of the printer
 // #define BAUDRATE 250000
@@ -167,15 +167,15 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 // default settings 
 
 // #define DEFAULT_AXIS_STEPS_PER_UNIT   {78.7402,78.7402,200*8/3,760*1.1}  // default steps per unit for ultimaker 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {59.19,59.19,2133.3,709.24}  // default steps per unit for ultimaker 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {59.19,29.595,2133.3,709.24}  // Y-axis 1/8 step, others 1/16
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)    
-    #define DEFAULT_MAX_ACCELERATION      {9000,900,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_ACCELERATION      {9000,900,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves 
 #define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for r retracts
 
 // 
-#define DEFAULT_XYJERK                15.0    // (mm/sec)
+#define DEFAULT_XYJERK                5.0    // (mm/sec)
 #define DEFAULT_ZJERK                 0.4     // (mm/sec)
 #define DEFAULT_EJERK                 5.0    // (mm/sec)
 
